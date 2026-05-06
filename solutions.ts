@@ -31,4 +31,16 @@ const checkType = (inputFromUser: StringOrNumber): string => {
 };
 
 const res3 = checkType("sfdso");
-console.log("Problem 3 Output: ", res3);
+console.log("Problem 3 Output:", res3);
+
+// Problem 4:
+
+const user = { id: 1, name: "John Doe", age: 21 };
+const person = { id: 2, name: "Nasir", isStudent: true };
+
+const getProperty = <T, k extends keyof T>(obj: T, key: k): T[k] => {
+  return obj[key];
+};
+
+const res4 = getProperty(person, "id");
+console.log("Problem 4 Output:",res4);
