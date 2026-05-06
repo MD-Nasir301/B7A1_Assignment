@@ -1,25 +1,16 @@
-// Problem 1:
-
+// Problem 1 : filterEvenNumbers --
 const filterEvenNumbers = (arrOfNumbers: number[]): number[] => {
   const evenNumbers = arrOfNumbers.filter((num) => num % 2 == 0);
   return evenNumbers;
 };
 
-const result = filterEvenNumbers([1, 2, 3, 4, 5, 6, 12, 45, 50, 11]);
-console.log("Problem 1 Output:", result);
-
-// Problem 2:
-
+// Problem 2 : reverseString --
 const reverseString = (inputText: string): string => {
   const reversText = inputText.split("").reverse().join("");
   return reversText;
 };
 
-const result2 = reverseString("Nasir");
-console.log("Problem 2 Output:", result2);
-
-// Problem 3:
-
+// Problem 3 : checkType --
 type StringOrNumber = string | number;
 
 const checkType = (inputFromUser: StringOrNumber): string => {
@@ -30,23 +21,12 @@ const checkType = (inputFromUser: StringOrNumber): string => {
   }
 };
 
-const res3 = checkType("sfdso");
-console.log("Problem 3 Output:", res3);
-
-// Problem 4:
-
-const user = { id: 1, name: "John Doe", age: 21 };
-const person = { id: 2, name: "Nasir", isStudent: true };
-
+// Problem 4 : getProperty --
 const getProperty = <T, k extends keyof T>(obj: T, key: k): T[k] => {
   return obj[key];
 };
 
-const res4 = getProperty(person, "id");
-console.log("Problem 4 Output:", res4);
-
 //Problem 5
-
 interface Book {
   title: string;
   author: string;
@@ -56,16 +36,8 @@ interface Book {
 const toggleReadStatus = (obj: Book): Book & { isRead: boolean } => {
   return { ...obj, isRead: true };
 };
-const res5 = toggleReadStatus({
-  title: "TypeScript Guide",
-  author: "Jane Doe",
-  publishedYear: 2024,
-});
 
-console.log("Problem 5 Output:", res5);
-
-// Problem 6
-
+// Problem 6 : Make Person and Student Classes with getDetails method in Student class --
 class Person {
   name: string;
   age: number;
@@ -86,16 +58,9 @@ class Student extends Person {
     return `Name: ${this.name}, Age: ${this.age} Grade: ${this.grade}`;
   }
 }
-const student = new Student("Alice", 20, "A");
-console.log("Problem 6 Output:", student.getDetails());
 
-// Problem 7
-
+// Problem 7 : getIntersection --
 const getIntersection = (arr1: number[], arr2: number[]): number[] => {
   const commonNumbers = arr1.filter((num) => arr2.includes(num));
   return commonNumbers;
 };
-console.log(
-  "Problem 7 Output:",
-  getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]),
-);
