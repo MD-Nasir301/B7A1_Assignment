@@ -64,4 +64,38 @@ const res5 = toggleReadStatus({
 
 console.log("Problem 5 Output:", res5);
 
+// Problem 6
 
+class Person {
+  name: string;
+  age: number;
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+}
+
+class Student extends Person {
+  grade: string;
+
+  constructor(name: string, age: number, grade: string) {
+    super(name, age);
+    this.grade = grade;
+  }
+  getDetails(): string {
+    return `Name: ${this.name}, Age: ${this.age} Grade: ${this.grade}`;
+  }
+}
+const student = new Student("Alice", 20, "A");
+console.log("Problem 6 Output:", student.getDetails());
+
+// Problem 7
+
+const getIntersection = (arr1: number[], arr2: number[]): number[] => {
+  const commonNumbers = arr1.filter((num) => arr2.includes(num));
+  return commonNumbers;
+};
+console.log(
+  "Problem 7 Output:",
+  getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]),
+);
