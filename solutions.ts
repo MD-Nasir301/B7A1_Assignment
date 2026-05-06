@@ -17,3 +17,18 @@ const reverseString = (inputText: string): string => {
 
 const result2 = reverseString("Nasir");
 console.log("Problem 2 Output:", result2);
+
+// Problem 3:
+
+type StringOrNumber = string | number;
+
+const checkType = (inputFromUser: StringOrNumber): string => {
+  if (typeof inputFromUser === "string") {
+    return "String";
+  } else {
+    return "Number";
+  }
+};
+
+const res3 = checkType("sfdso");
+console.log("Problem 3 Output: ", res3);
