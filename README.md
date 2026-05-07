@@ -1,4 +1,4 @@
-# B7A1 TypeScript and OOP Assignment - Blog & Solutions
+# B7A1 TypeScript Assignment - Blog & Solutions
 
 ## Project Structure
 
@@ -30,4 +30,5 @@
 
 **Nasir** _Aspiring MERN Stack Developer_ **Next Level AI-Driven Software Engineering Bootcamp** Level 2, Batch 07 | Programming Hero
 
-[GitHub](https://github.com/MD-Nasir301) 
+[GitHub](https://github.com/MD-Nasir301) |
+[Linkedin](https://www.linkedin.com/in/nasirullah-babu-8342531b8)
