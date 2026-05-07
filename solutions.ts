@@ -1,16 +1,16 @@
-// Problem 1 : filterEvenNumbers --
+
 const filterEvenNumbers = (arrOfNumbers: number[]): number[] => {
   const evenNumbers = arrOfNumbers.filter((num) => num % 2 == 0);
   return evenNumbers;
 };
 
-// Problem 2 : reverseString --
+
 const reverseString = (inputText: string): string => {
   const reversText = inputText.split("").reverse().join("");
   return reversText;
 };
 
-// Problem 3 : checkType --
+
 type StringOrNumber = string | number;
 
 const checkType = (inputFromUser: StringOrNumber): string => {
@@ -21,7 +21,7 @@ const checkType = (inputFromUser: StringOrNumber): string => {
   }
 };
 
-// Problem 4 : getProperty --
+
 const getProperty = <T, k extends keyof T>(obj: T, key: k): T[k] => {
   return obj[key];
 };
@@ -37,7 +37,7 @@ const toggleReadStatus = (obj: Book): Book & { isRead: boolean } => {
   return { ...obj, isRead: true };
 };
 
-// Problem 6 : Make Person and Student Classes with getDetails method in Student class --
+
 class Person {
   name: string;
   age: number;
@@ -59,7 +59,7 @@ class Student extends Person {
   }
 }
 
-// Problem 7 : getIntersection --
+
 const getIntersection = (arr1: number[], arr2: number[]): number[] => {
   const commonNumbers = arr1.filter((num) => arr2.includes(num));
   return commonNumbers;
